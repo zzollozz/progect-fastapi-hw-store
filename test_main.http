@@ -1,0 +1,113 @@
+# Test your FastAPI endpoints
+
+# curl -X 'POST'
+#  'http://127.0.0.1:8000/user/'
+#  -H 'accept: application/json'
+#  -H 'Content-Type: application/json'
+#  -d '{
+#  "first_name": "Test_User",
+#  "last_name": "Test_User",
+#  "email": "test_mail@mail.com",
+#  "password": "testpass"
+#}'
+POST http://127.0.0.1:8000/user/
+accept: application/json
+Content-Type: application/json
+
+{
+  "first_name": "Test_User_999",
+  "last_name": "Test_User_999",
+  "email": "Test_User_999@mail.com",
+  "password": "testpass"
+}
+
+###
+
+# curl -X 'GET'
+#  'http://127.0.0.1:8000/users/?skip=0&limit=100'
+#  -H 'accept: application/json'
+GET http://127.0.0.1:8000/users/
+accept: application/json
+
+###
+
+# curl -X 'GET'
+#  'http://127.0.0.1:8000/user/2'
+#  -H 'accept: application/json'
+GET http://127.0.0.1:8000/user/3
+accept: application/js
+
+###
+
+
+# curl -X 'POST'
+#  'http://127.0.0.1:8000/product/'
+#  -H 'accept: application/json'
+#  -H 'Content-Type: application/json'
+#  -d '{
+#  "name_product": "Стул",
+#  "description": "Бомбический красный стул из экокожи",
+#  "price": 1500
+#}'
+POST http://127.0.0.1:8000/product/
+accept: application/json
+Content-Type: application/json
+
+{
+  "name_product": "вававыа",
+  "description": "Шаыаыаваыхожей",
+  "price": 954932.34
+}
+
+###
+
+# curl -X 'GET'
+#  'http://127.0.0.1:8000/products/?skip=0&limit=100'
+#  -H 'accept: application/json'
+GET http://127.0.0.1:8000/products/
+accept: application/json
+
+###
+
+# curl -X 'GET'
+#  'http://127.0.0.1:8000/product/2'
+#  -H 'accept: application/json'
+GET http://127.0.0.1:8000/product/1
+accept: application/json
+
+###
+
+# curl -X 'DELETE'
+#  'http://127.0.0.1:8000/product/3'
+#  -H 'accept: application/json'
+DELETE http://127.0.0.1:8000/product/6
+accept: application/json
+
+###
+
+
+
+# curl -X 'GET'
+#  'http://127.0.0.1:8000/orders/?limit=100'
+#  -H 'accept: application/json'
+GET http://127.0.0.1:8000/orders/?limit=100
+accept: application/json
+
+###
+
+# curl -X 'GET'
+#  'http://127.0.0.1:8000/order/1'
+#  -H 'accept: application/json'
+GET http://127.0.0.1:8000/order/1
+accept: application/json
+
+###
+
+
+
+
+
+
+
+
+

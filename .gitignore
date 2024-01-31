@@ -1,0 +1,6 @@
+/venv_fastapi_store/
+.idea/
+__pycache__/
+
+/test__.py
+/data_base_store.py
